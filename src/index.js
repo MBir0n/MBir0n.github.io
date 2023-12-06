@@ -365,5 +365,6 @@ function modifTimer(){
 function nbVictoir(){
   let mancheGagner=document.getElementById("victoire");
   let mancheGagnerNb=Number(mancheGagner.innerHTML);
+  mancheGagnerNb++;
   mancheGagner.innerHTML=(mancheGagnerNb);
 }

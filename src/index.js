@@ -204,9 +204,9 @@ function guess(event) {
         counter = 0;
       }
       if (life > 1) {
-        livesDisplay.innerHTML = `VOUS AVEZ ${life} VIE!`;
+        livesDisplay.innerHTML = `VOUS AVEZ ${life} VIES!`;
       } else if (life === 1) {
-        livesDisplay.innerHTML = `VOUS ${life} VIE!`;
+        livesDisplay.innerHTML = `VOUS AVEZ ${life} VIE!`;
       } else {
         livesDisplay.innerHTML = `PARTIE TERMINER!`;
       }
@@ -217,7 +217,7 @@ function guess(event) {
     //console.log(counter);
     //console.log(life);
     if (answer === winningCheck) {
-      livesDisplay.innerHTML = `VOUS GAGNER!`;
+      livesDisplay.innerHTML = `VOUS AVEZ GAGNER!`;
       nbVictoir();//cette appelle à été rajouter pour appeler le compteur de victoire, il étais plus simple d'appeler une function que de la recréer ici
       stopIntervall();
       return;
